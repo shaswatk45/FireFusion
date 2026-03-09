@@ -4,7 +4,7 @@ require('dotenv').config();
 
 const createCoordinator = async () => {
     try {
-        await mongoose.connect('mongodb://127.0.0.1:27017/disastersync');
+        await mongoose.connect('mongodb://127.0.0.1:27017/firefusion');
         console.log('Connected to DB');
 
         const coordinatorData = {

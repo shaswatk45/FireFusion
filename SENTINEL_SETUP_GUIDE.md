@@ -15,7 +15,7 @@
 3. Click on **"OAuth clients"** in the left sidebar
 4. Click **"+ New OAuth Client"** button
 5. Fill in the details:
-   - **Name**: `DisasterSync Fire Verification` (or any name you prefer)
+   - **Name**: `FireFusion Fire Verification` (or any name you prefer)
    - **Grant Type**: Select **"Client Credentials"**
    - Click **Create**
 
@@ -34,7 +34,7 @@ CLIENT_SECRET=a1B2c3D4e5F6g7H8i9J0k1L2m3N4o5P6
 
 You will paste these credentials in the `.env` file located at:
 ```
-d:\SEM 5\EL\Disaster-Sync-main\Disaster-Sync-main\verification-service\.env
+d:\SEM 5\EL\FireFusion-main\FireFusion-main\verification-service\.env
 ```
 
 The file will look like this:

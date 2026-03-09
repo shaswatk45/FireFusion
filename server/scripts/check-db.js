@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const User = require('../models/User'); // Adjust path if necessary
 
 console.log('Testing MongoDB connection...');
-const uri = 'mongodb://127.0.0.1:27017/disastersync';
+const uri = 'mongodb://127.0.0.1:27017/firefusion';
 console.log('URI:', uri);
 
 mongoose.connect(uri)

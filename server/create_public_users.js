@@ -9,7 +9,7 @@ require('dotenv').config();
 
 const createPublicUsers = async () => {
     try {
-        await mongoose.connect('mongodb://127.0.0.1:27017/disastersync');
+        await mongoose.connect('mongodb://127.0.0.1:27017/firefusion');
         console.log('Connected to DB\n');
 
         const users = [

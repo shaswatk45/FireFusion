@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json({ limit: '50mb' }));
 
-const mongoURI = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/disastersync';
+const mongoURI = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/firefusion';
 console.log(`Using MongoDB URI: ${mongoURI}`);
 
 mongoose.connect(mongoURI)
@@ -58,7 +58,7 @@ app.use('/api/damage-assessment', damageAssessmentRoutes);
 // Health check route
 app.get('/', (req, res) => {
   res.json({
-    message: 'DisasterSync API is running!',
+    message: 'FireFusion API is running!',
     version: '1.0.0',
     endpoints: [
       '/api/auth',

@@ -4,7 +4,7 @@ require('dotenv').config();
 
 const listIncidents = async () => {
     try {
-        await mongoose.connect('mongodb://127.0.0.1:27017/disastersync');
+        await mongoose.connect('mongodb://127.0.0.1:27017/firefusion');
         console.log('Connected to MongoDB\n');
 
         const incidents = await Incident.find().sort({ reportedAt: -1 }).limit(20);

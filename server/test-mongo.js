@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const MONGO_URI = 'mongodb://localhost:27017/disastersync';
+const MONGO_URI = 'mongodb://localhost:27017/firefusion';
 
 console.log('='.repeat(50));
 console.log('MongoDB Connection Test');

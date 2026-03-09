@@ -4,7 +4,7 @@ require('dotenv').config();
 async function clearOldFireData() {
     try {
         // Use the exact same connection as the server
-        const mongoUri = 'mongodb://127.0.0.1:27017/disastersync';
+        const mongoUri = 'mongodb://127.0.0.1:27017/firefusion';
 
         console.log('Connecting to MongoDB...');
         await mongoose.connect(mongoUri, {

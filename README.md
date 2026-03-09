@@ -1,157 +1,155 @@
-# 🚨 FireFusion - Emergency Management Platform
+# 🚨 FireFusion - Disaster Response & Coordination Platform
 
-A comprehensive disaster management and relief coordination platform built with modern web technologies. FireFusion enables efficient emergency response, resource management, and real-time communication during crisis situations.
+FireFusion is a web-based platform designed to assist in disaster response and relief coordination. It provides tools for managing incidents, tracking emergency resources, and enabling real-time communication between administrators and volunteers during crisis situations.
 
-## 🌟 Features
+## 🌟 Platform Features
 
-### 🔐 User Management & Authentication
-- Secure user registration and login system
-- Role-based access control (Admin/User)
-- Protected routes and API endpoints
-- Change roles and delete users
+### 🔐 Authentication & User Roles
+- Secure login and registration system
+- Role-based access permissions (Admin/User)
+- Protected API routes and application pages
+- Admin ability to update user roles
+- Admin control to remove users from the system
 
-### 📊 Incident Management
-- Create, track, and manage emergency incidents
-- Assign incidents to specific volunteers
-- Real-time incident status updates
-- Incident categorization and priority levels
-- Geographic incident mapping
+### 📊 Incident Tracking
+- Create and manage disaster incidents
+- Assign incidents to volunteers
+- Update incident progress in real time
+- Categorize incidents based on type and priority
+- Map incidents geographically for easier tracking
 
-### 🚨 Alert & Notification System
-- Admin broadcast alert messaging
-- Real-time notifications via Socket.io
-- Emergency alert distribution
+### 🚨 Alerts & Notifications
+- Administrators can broadcast emergency alerts
+- Instant notifications using Socket.io
+- Real-time alert delivery to active users
 
-### 📦 Inventory Management
-- Track emergency supplies and resources
-- Inventory level monitoring
-- Resource allocation tracking
-- Supply chain management
+### 📦 Resource & Supply Management
+- Monitor available emergency supplies
+- Track inventory levels and resource usage
+- Manage distribution of supplies during emergencies
+- Maintain supply availability records
 
-### 📋 Inventory Request System
-- Request emergency supplies and resources
-- Approval workflow for resource requests
-- Request status tracking
-- Priority-based request handling
+### 📋 Resource Request Handling
+- Users can submit requests for emergency resources
+- Admin approval system for requests
+- Track the progress of supply requests
+- Handle requests based on priority levels
 
-### 💬 Additional Features
-- Public user request to become volunteer
-- Real-time Dashboard
-- Request incident assignment
-- Mark as complete, delete and update status of incidents(in progress, resolved)
-  
-### ⚡ Real-time Features
-- Live notifications and updates
+### 💬 Additional Functionalities
+- Public users can apply to become volunteers
+- Real-time dashboard for monitoring system activity
+- Volunteers can request incident assignments
+- Incidents can be updated, resolved, or removed
+- Incident status indicators (In Progress / Resolved)
+
+### ⚡ Real-time Capabilities
+- Live notifications across the platform
 - WebSocket-based real-time communication
-- Instant alert broadcasting
-- Real-time inventory updates
+- Immediate alert broadcasts
+- Live updates for inventory and incidents
 
-## 🛠️ Tech Stack
+## 🛠️ Technology Stack
 
 ### Frontend
-- **React** - Modern UI framework
-- **Vite** - Fast development build tool
-- **Tailwind CSS** - Utility-first CSS framework
-- **Socket.io Client** - Real-time communication
+- **React** – UI development framework
+- **Vite** – Fast build and development tool
+- **Tailwind CSS** – Utility-first styling framework
+- **Socket.io Client** – Real-time communication
 
 ### Backend
-- **Node.js** - Runtime environment
-- **Express.js** - Web application framework
-- **MongoDB** - NoSQL database
-- **Mongoose** - MongoDB object modeling
-- **Socket.io** - Real-time bidirectional communication
-- **JWT** - JSON Web Tokens for authentication
-- **bcrypt** - Password hashing
+- **Node.js** – Server runtime environment
+- **Express.js** – Backend web framework
+- **MongoDB** – NoSQL database
+- **Mongoose** – MongoDB data modeling
+- **Socket.io** – Real-time bidirectional communication
+- **JWT** – Authentication using JSON Web Tokens
+- **bcrypt** – Secure password hashing
 
 ### Database
-- **MongoDB Atlas** - Cloud database service
+- **MongoDB Atlas** – Cloud-hosted database service
 
-### Development Tools
-- **ES6+ Modules** - Modern JavaScript
-- **dotenv** - Environment variable management
-- **CORS** - Cross-origin resource sharing
+### Development Utilities
+- **ES6 Modules** – Modern JavaScript syntax
+- **dotenv** – Environment variable configuration
+- **CORS** – Cross-origin request handling
 
 ## 🚀 Getting Started
 
 ### Prerequisites
+Make sure the following are installed:
 - Node.js (v18 or higher)
 - MongoDB Atlas account
 - Git
 
 ### Installation
-
 1. **Clone the repository**
+   ```bash
    git clone https://github.com/shaswatk45/FireFusion.git
-
    cd FireFusion
+   ```
 
-
-3. **Install server dependencies**
+2. **Install backend dependencies**
+   ```bash
    cd server
-
    npm install
+   ```
 
-
-3. **Install client dependencies**
+3. **Install frontend dependencies**
+   ```bash
    cd ../client
-
    npm install
+   ```
 
+### Environment Configuration
+Create a `.env` file inside the `server` directory and add:
+```env
+MONGO_URI=your_mongodb_atlas_connection_string
+JWT_SECRET=your_jwt_secret_key
+PORT=5000
+```
 
-4. **Environment Setup**
+### Running the Application
 
-   Create a `.env` file in the `server` directory:
+1. **Start the backend server**
+   ```bash
+   cd server
+   node server.js
+   ```
 
-   MONGO_URI=your_mongodb_atlas_connection_string
+2. **Start the frontend client**
+   ```bash
+   cd client
+   npm run dev
+   ```
 
-   JWT_SECRET=your_jwt_secret_key
+### Access the Application
+- Frontend → `http://localhost:5173`
+- Backend API → `http://localhost:5000`
 
-   PORT=5000
+## 🔧 Implementation Highlights
 
-
-5. **Run the application**
-
-  **Start the server:**
-    cd server
-
-    node server.js
-
-
-  **Start the client (in a new terminal):**
-    cd client
-
-    npm run dev
-
-
-6. **Access the application**
-- Frontend: `http://localhost:5173`
-- Backend API: `http://localhost:5000`
-
-## 🔧 Key Features Implementation
-
-### Real-time Communication
-- Implemented using Socket.io for instant notifications
-- WebSocket connections for live updates
-- Event-driven architecture for real-time features
+### Real-time System
+- Socket.io used for instant updates
+- WebSocket connections for live notifications
+- Event-based communication between client and server
 
 ### Security
-- JWT-based authentication
-- Password hashing with bcrypt
-- Protected API routes
-- CORS configuration for secure cross-origin requests
+- Authentication implemented using JWT
+- Password encryption with bcrypt
+- Protected backend routes
+- CORS enabled for secure requests
 
-### Database Design
+### Database Structure
 - MongoDB with Mongoose ODM
-- Optimized schema design for emergency data
-- Efficient indexing for fast queries
+- Structured schemas for incidents, users, and resources
+- Indexed collections for efficient queries
 
 ## 🤝 Contributing
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/NewFeature`)
+3. Commit your changes (`git commit -m 'Add new feature'`)
+4. Push to your branch (`git push origin feature/NewFeature`)
+5. Submit a Pull Request
 
 ---
 

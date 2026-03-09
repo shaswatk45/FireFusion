@@ -127,6 +127,6 @@ curl -X POST http://localhost:8000/verify-fire \
 - Allows approximately **500-1000 verifications per month**
 - Monitor usage at: https://apps.sentinel-hub.com/dashboard/
 
-## Integration with DisasterSync
+## Integration with FireFusion
 
 This service is called by the Node.js backend (`wildfireMonitoring.js`) to verify fires before creating dashboard alerts.
