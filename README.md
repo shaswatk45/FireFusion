@@ -1,6 +1,6 @@
-# 🚨 DisasterSync - Emergency Management Platform
+# 🚨 FireFusion - Emergency Management Platform
 
-A comprehensive disaster management and relief coordination platform built with modern web technologies. DisasterSync enables efficient emergency response, resource management, and real-time communication during crisis situations.
+A comprehensive disaster management and relief coordination platform built with modern web technologies. FireFusion enables efficient emergency response, resource management, and real-time communication during crisis situations.
 
 ## 🌟 Features
 
@@ -81,15 +81,15 @@ A comprehensive disaster management and relief coordination platform built with 
 ### Installation
 
 1. **Clone the repository**
-  git clone https://github.com/yourusername/Disaster-Sync.git
+   git clone https://github.com/shaswatk45/FireFusion.git
 
-  cd disaster-sync
+   cd FireFusion
 
 
 3. **Install server dependencies**
-  cd server
+   cd server
 
-  npm install
+   npm install
 
 
 3. **Install client dependencies**
@@ -152,14 +152,6 @@ A comprehensive disaster management and relief coordination platform built with 
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
-
-## 👨‍💻 Developer
-
-**[Khushi Malviya]**
-- GitHub: [@khushi-malviya(https://github.com/khushi-malviya)
-- LinkedIn: [My LinkedIn Profile](https://www.linkedin.com/in/khushi-malviya-72308a20b/)
-- Email: khushimalviya11054@gmail.com
 
 ---
 
